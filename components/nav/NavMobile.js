@@ -26,7 +26,7 @@ const NavMobile = () => {
       <div className="">
         <div>
           <Link href="/">
-            <Image src={logo} />
+            <Image src={logo} alt="logo" />
           </Link>
         </div>
       </div>

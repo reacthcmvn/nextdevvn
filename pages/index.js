@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import NavMobile from "../components/nav/NavMobile";
-import Testbtn from "../components/ui/testbtn";
 
 export default function Home() {
   return (
@@ -24,8 +23,6 @@ export default function Home() {
         est consequuntur nam quo ad culpa accusantium omnis quia? Omnis error ad
         reprehenderit, accusantium sit natus vero!
       </div>
-
-      <Testbtn />
     </div>
   );
 }
