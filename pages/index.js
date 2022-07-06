@@ -10,11 +10,15 @@ export default function Home() {
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
         officia delectus voluptas enim cupiditate, ad dolores, maiores ipsum
         neque corrupti commodi at, assumenda exercitationem quibusdam quae minus
-        corporis. Nemo possimus, incidunt aliquid consequuntur et quae. A
-        eveniet eligendi magni saepe libero recusandae placeat officia ipsum
+        corporis. Nemo possimus, incidunt aliquid consequuntur et quae.
+      </div>
+      <div id="project">
+        A eveniet eligendi magni saepe libero recusandae placeat officia ipsum
         repudiandae vitae deleniti laborum corporis tempore nam amet delectus
-        cum, voluptatum totam? Blanditiis facere ut fugit corrupti fugiat,
-        cumque cum repellat aperiam ullam nostrum minima commodi expedita error
+        cum, voluptatum totam? Blanditiis facere ut fugit corrupti fugiat.
+      </div>
+      <div id="contact">
+        Cumque cum repellat aperiam ullam nostrum minima commodi expedita error
         est consequuntur nam quo ad culpa accusantium omnis quia? Omnis error ad
         reprehenderit, accusantium sit natus vero!
       </div>
