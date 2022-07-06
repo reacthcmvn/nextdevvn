@@ -1,16 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
-import NavMobile from "../components/nav/NavMobile";
 
 export default function Home() {
   return (
     <div>
-      <div className="bg-orange-500">
-        <NavMobile />
-      </div>
-      <div id="nav-mobi" className="font-pra text-[2rem]">
-        hi tung, this is hero cap.
-      </div>
+      <div className="bg-orange-500"></div>
+      <div className="font-pra text-[2rem]">hi tung, this is hero cap.</div>
       <div className="bg-red-100">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
         officia delectus voluptas enim cupiditate, ad dolores, maiores ipsum
