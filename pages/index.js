@@ -1,6 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import avatar from "../styles/src/img/tungnoise.jpg";
+
+import { GoHeart } from "react-icons/go";
 
 export default function Home() {
   return (
@@ -9,7 +12,8 @@ export default function Home() {
         <div></div>
         <div className="">
           <div className=" h-[68vh] min-w-[35vh] rounded-l-[100vh] m-2 mr-4 p-3 border-2 border-orange-300">
-            <div className=" bg-pink-500  min-h-[60vh] mt-4 ml-2 max-w-[30vh] rounded-l-[100vh] z-[99] bg-cover bg-[url('https://scontent.fsgn13-3.fna.fbcdn.net/v/t39.30808-6/290184563_118413767561642_4631229608620407579_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=BKcoyLhX6s8AX8Cgd_T&_nc_ht=scontent.fsgn13-3.fna&oh=00_AT9nfpYEWwEVhYXfQAl7kQ3s3eIAxZWOzujShql26wimhw&oe=62CAA9EA')] "></div>
+            {/* <div className=" bg-pink-500  min-h-[60vh] mt-4 ml-2 max-w-[30vh] rounded-l-[100vh] z-[99] bg-cover bg-[url('https://scontent.fsgn13-3.fna.fbcdn.net/v/t39.30808-6/290184563_118413767561642_4631229608620407579_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=BKcoyLhX6s8AX8Cgd_T&_nc_ht=scontent.fsgn13-3.fna&oh=00_AT9nfpYEWwEVhYXfQAl7kQ3s3eIAxZWOzujShql26wimhw&oe=62CAA9EA')] "></div> */}
+            <div className=" bg-pink-500  min-h-[60vh] mt-4 ml-2 max-w-[30vh] rounded-l-[100vh] z-[99] bg-cover bg-[url('https://nextdevvn2.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftungnoise.8c3624ea.jpg&w=3840&q=75')] "></div>
           </div>
         </div>
       </div>
@@ -24,25 +28,42 @@ export default function Home() {
         <h2 className=" text-right font-thin">Front-end Developer</h2>
         <p className=" text-right font-corm">Self-taught</p>
       </div>
-      <div className=" first-letter:text-7xl">
-        Tung is a web developer using React/Next. I am an open-minded web
-        developer whos ready for new challenges. I have almost 1000hours
-        learning & 200 hours practicing.
-      </div>
-      <div className="bg-red-100 first-letter:text-7xl">
-        Excepturi officia delectus voluptas enim cupiditate, ad dolores, maiores
-        ipsum neque corrupti commodi at, assumenda exercitationem quibusdam quae
-        minus corporis. Nemo possimus, incidunt aliquid consequuntur et quae.
-      </div>
-      <div id="project">
-        A eveniet eligendi magni saepe libero recusandae placeat officia ipsum
-        repudiandae vitae deleniti laborum corporis tempore nam amet delectus
-        cum, voluptatum totam? Blanditiis facere ut fugit corrupti fugiat.
-      </div>
-      <div id="contact">
-        Cumque cum repellat aperiam ullam nostrum minima commodi expedita error
-        est consequuntur nam quo ad culpa accusantium omnis quia? Omnis error ad
-        reprehenderit, accusantium sit natus vero!
+
+      <div id="below-screen" className="p-6">
+        <div className=" first-letter:text-7xl">
+          Tung is a web developer using React/Next. He is an open-minded
+          front-end guy who always ready for new challenges. He has spent almost
+          1000hours learning & 200 hours practicing (React, Redux, Next, CSS,
+          HTML, JS…).
+        </div>
+        <br />
+        <h2 className="">My porfolio</h2>
+        <div id="project">
+          This project [done 30%]: Tung create desktop app for crypto market.
+          MVP: to split capital into 9 accounts and help users paper-trading on
+          crypto.{" "}
+          <Link href="/projects">
+            <span className="underline underline-offset-2">View details</span>
+          </Link>
+          .
+        </div>
+        <br />
+        <h2>My story</h2>
+        <div id="about-me">
+          Tung spent nearly one and half years learning developing. Code hard,
+          made hundreds of mistakes and now well practicing everyday, making
+          beautiful web applications. see about me{" "}
+          <Link href="/about-me">
+            <span className="underline underline-offset-2">here</span>
+          </Link>
+          .
+        </div>
+        <br />
+        <h2>Get in touch {<GoHeart />}</h2>
+        <div id="contact">
+          <span>My E-mail: </span>
+          <a href="mailto:react.hcmvn@gmail.com">react.hcmvn@gmail.com</a>
+        </div>
       </div>
     </div>
   );
