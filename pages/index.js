@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+
+import getme from "../styles/src/img/tungnoise.jpg";
 import avatar from "../styles/src/img/tungnoise.jpg";
 
 import { GoHeart } from "react-icons/go";
@@ -13,7 +15,15 @@ export default function Home() {
         <div className="">
           <div className=" h-[68vh] min-w-[35vh] rounded-l-[100vh] m-2 mr-4 p-3 border-2 border-orange-300">
             {/* <div className=" bg-pink-500  min-h-[60vh] mt-4 ml-2 max-w-[30vh] rounded-l-[100vh] z-[99] bg-cover bg-[url('https://scontent.fsgn13-3.fna.fbcdn.net/v/t39.30808-6/290184563_118413767561642_4631229608620407579_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=BKcoyLhX6s8AX8Cgd_T&_nc_ht=scontent.fsgn13-3.fna&oh=00_AT9nfpYEWwEVhYXfQAl7kQ3s3eIAxZWOzujShql26wimhw&oe=62CAA9EA')] "></div> */}
-            <div className=" bg-pink-500  min-h-[60vh] mt-4 ml-2 max-w-[30vh] rounded-l-[100vh] z-[99] bg-cover bg-[url('https://nextdevvn2.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftungnoise.8c3624ea.jpg&w=3840&q=75')] "></div>
+            {/* <div className=" bg-pink-500  min-h-[60vh] mt-4 ml-2 max-w-[30vh] rounded-l-[100vh] z-[99] bg-cover bg-[url('https://nextdevvn2.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftungnoise.8c3624ea.jpg&w=3840&q=75')] "></div> */}
+            <div className="relative overflow-hidden bg-orange-500/30  min-h-[60vh] mt-4 ml-2 max-w-[30vh] rounded-l-[100vh] z-[99]  ">
+              <Image
+                src={getme}
+                alt="get this url"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -39,9 +49,9 @@ export default function Home() {
         <br />
         <h2 className="">My porfolio</h2>
         <div id="project">
-          This project [done 30%]: Tung create desktop app for crypto market.
-          MVP: to split capital into 9 accounts and help users paper-trading on
-          crypto.{" "}
+          This project [Completed: 30%]: Tung created desktop app for crypto
+          market. MVP: to split capital into 9 accounts and help users
+          paper-trading on crypto.{" "}
           <Link href="/projects">
             <span className="underline underline-offset-2">View details</span>
           </Link>

@@ -48,3 +48,7 @@ h6 {
 h1 {
   font-size: 2rem;
 }
+
+video {
+  width: 800px;
+}

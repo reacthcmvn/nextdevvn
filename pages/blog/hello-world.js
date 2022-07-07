@@ -2,7 +2,11 @@ import React from "react";
 import BlogPost from "../../components/layout/BlogPost";
 
 const helloworld = () => {
-  return <BlogPost>here is the blog</BlogPost>;
+  return (
+    <div className="mx-6">
+      <BlogPost>Coming soon...</BlogPost>
+    </div>
+  );
 };
 
 export default helloworld;
