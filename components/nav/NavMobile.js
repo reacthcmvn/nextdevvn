@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../styles/src/img/logofit-03.png";
+import logo from "../../styles/src/img/logo1-02.png";
 import { FiBarChart2 } from "react-icons/fi";
 import { BsXLg } from "react-icons/bs";
 import { motion, AnimatePresence } from "framer-motion";
@@ -35,9 +35,9 @@ const NavMobile = () => {
   }
 
   return (
-    <div className="">
-      <div className="p-2 flex justify-between bg-red-500/30 md:hidden">
-        <div className="h-[40px]">
+    <div className="relative z-[100]">
+      <div className="p-2 flex justify-between  md:hidden">
+        <div className="max-h-[20px]">
           <Link href="/">
             <Image src={logo} layout="intrinsic" alt="logo" />
           </Link>
