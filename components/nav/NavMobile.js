@@ -35,8 +35,8 @@ const NavMobile = () => {
   }
 
   return (
-    <div className="relative z-[100]">
-      <div className="p-2 flex justify-between  md:hidden">
+    <div className="relative z-[100] p-2">
+      <div id="logo" className="p-2 flex justify-between  md:hidden">
         <div className="max-h-[20px]">
           <Link href="/">
             <Image src={logo} layout="intrinsic" alt="logo" />
@@ -52,7 +52,7 @@ const NavMobile = () => {
         </div>
       </div>
 
-      <div className="md:hidden " id="nav-link">
+      <div id="nav-mobile" className="md:hidden " id="nav-link">
         <AnimatePresence>
           {isOpen && (
             <motion.ul
@@ -120,7 +120,7 @@ const NavMobile = () => {
         </AnimatePresence>
       </div>
 
-      <div className="p-2 bg-green-500/30 hidden md:block">
+      <div id="nav-pc-navigation1" className="p-2 hidden md:block">
         <div className="flex flex-row justify-between">
           <div className="h-[40px] my-auto">
             <Link href="/">
@@ -134,6 +134,8 @@ const NavMobile = () => {
           </div>
         </div>
       </div>
+      <hr className="border-orange-300/90" />
+      <br />
     </div>
   );
 };
