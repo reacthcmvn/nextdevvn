@@ -40,5 +40,7 @@ h6 {
 }
 
 .main-body {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 60rem;
 }

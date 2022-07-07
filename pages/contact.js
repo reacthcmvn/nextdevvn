@@ -1,7 +1,7 @@
 import React from "react";
 
 const contact = () => {
-  return <div>here form</div>;
+  return <div className="main-body">here form</div>;
 };
 
 export default contact;

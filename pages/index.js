@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
+    <div className="main-body">
       <div className="bg-orange-500"></div>
       <div className="font-pra text-[2rem]">hi tung, this is hero cap.</div>
       <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
