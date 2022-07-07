@@ -52,7 +52,7 @@ const NavMobile = () => {
         </div>
       </div>
 
-      <div id="nav-mobile" className="md:hidden " id="nav-link">
+      <div id="nav-mobile" className="md:hidden ">
         <AnimatePresence>
           {isOpen && (
             <motion.ul

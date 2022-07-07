@@ -6,10 +6,14 @@ import tungboard from "../styles/src/img/tungnoisecover.jpg";
 const aboutMe = () => {
   return (
     <div className="main-body p-6">
+      <div className="absolute max-w-[30vw] right-0">
+        <Image src={tungboard} alt="tung works hard" />
+      </div>
       <div className="max-w-[60vw] first-letter:text-7xl">
         Finding myself in middle of nowhere at the age 32, I decide to become a
         web developer.
       </div>
+      <br />
       <Image src={tungboard} alt="tung works hard" />
 
       <h1 className="h1">Why?</h1>
