@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import BtnPill from "../components/ui/BtnPill";
 import { HiCursorClick } from "react-icons/hi";
@@ -15,6 +16,7 @@ import multichart from "../styles/src/img/project1/port105.png";
 import newnews from "../styles/src/img/project1/port106.png";
 import tungye from "../styles/src/img/tungyellow.jpg";
 import Feature from "../components/ui/Feature";
+import BtnSquareTrans from "../components/ui/BtnSquareTrans";
 
 // import demo2 from "../styles/src/vid/demo2.mp4";
 
@@ -29,6 +31,9 @@ const projects = () => {
 
   return (
     <div className="main-body">
+      {/* ---------------------------------- */}
+
+      {/* ---------------------------------------------------- */}
       <div className="mt-8 w-full bg-white ">
         <div className="p-6">
           <Image
@@ -55,7 +60,7 @@ const projects = () => {
               </a>{" "}
             </p>
             <br />
-            <div className="flex flex-row flex-wrap justify-center">
+            <div className="relative flex flex-row flex-wrap justify-center ">
               <BtnPill text="React" colorx="white" />
               <BtnPill text="Next" />
               <BtnPill text="@redux/toolkit" />
@@ -81,10 +86,12 @@ const projects = () => {
             knowledge required.
           </p>
         </div>
-        <div className="rounded-lg bg-gray-100 h-20 mx-0 my-6 font-robo font-semibold text-lg flex justify-start pl-6">
-          <HiCursorClick className="my-auto m-2 " />
-          <p className="my-auto">Watch Live Demo Now!</p>
-        </div>
+        <Link href="https://funtradinglab2.vercel.app/">
+          <div className="rounded-lg bg-gray-100 h-20 mx-0 my-6 font-robo font-semibold text-lg flex justify-start pl-6">
+            <HiCursorClick className="my-auto m-2 " />
+            <p className="my-auto">Watch Live Demo Now!</p>
+          </div>
+        </Link>
 
         <div className="relative overflow-hidden rounded-lg min-w-3/4 min-h-[30vh] drop-shadow-xl ">
           <Image
@@ -95,9 +102,13 @@ const projects = () => {
           />
         </div>
         <div className="text-center">
-          <p className="mt-10">
-            Let&apos;s the computer do hard work! So you can enjoy{" "}
-            <span className="font-staa text-green-700">profit</span>.
+          <br />
+          <p className="text-center font-bold text-[2rem] ">
+            Fully customizable dashboard
+          </p>
+          <p className="text-center font-robo p-2 my-auto text-sm">
+            More than 12 indicators are included. Aimed to assist traders making
+            meaningful decisions.
           </p>
         </div>
       </div>
@@ -110,7 +121,7 @@ const projects = () => {
         <div className="flex justify-end w-full">
           <div
             id="split-board"
-            className=" drop-shadow-lg absolute bg-gray-900 mr-[16vw] -mt-20 overflow-hidden min-w-[20vh] h-[20vh] rounded-[20vh]"
+            className=" drop-shadow-lg absolute bg-gray-900  -mt-20 mr-2 overflow-hidden min-w-[30vh] md:min-w-[60vh] md:-mr-[40vw] h-[30vh] rounded-lg"
           >
             <Image
               src={myorder}
@@ -120,10 +131,19 @@ const projects = () => {
             />
           </div>
         </div>
-        <div id="quote" className="font-corm text-[2rem] p-6">
-          <div className="mt-20">
-            <p>&ldquoYou cannot lose </p>
-            <p> by taking profit.&ldquo</p>
+        <div id="quote" className="font-corm text-[2rem] p-6 min-h-[60vh]">
+          <div className="mt-40">
+            <p>&ldquo;You cannot lose </p>
+            <p> by taking profit.&ldquo;</p>
+            <br />
+            <p className="font-sati text-[1.5rem]">
+              {" "}
+              1. Notify orders are profit.
+            </p>
+            <p className="font-sati text-[1.5rem]">
+              {" "}
+              2. Auto calculate lot size.
+            </p>
           </div>
         </div>
 
@@ -135,21 +155,6 @@ const projects = () => {
         </div>
       </div>
       {/* ---------------------function 2-------------------------------------------- */}
-      <div id="demo-part-1" className="min-h-[80vh] w-full">
-        <div className=" rounded-t-3 min-h-[50vh] rounded-[20px] ">
-          <video autoPlay controls loop muted className="">
-            <source src="/demo2.mp4" type="video/mp4" />
-          </video>
-          <br />
-          <p className="text-center font-bold text-[2rem] ">
-            Fully customizable dashboard
-          </p>
-          <p className="text-center font-robo p-2 my-auto text-sm">
-            More than 12 indicators are included. Aimed to assist traders making
-            meaningful decisions.
-          </p>
-        </div>
-      </div>
 
       {/* ---------------------function 4-------------------------------------------- */}
       <div
@@ -165,10 +170,41 @@ const projects = () => {
           can be sure you are making the right financial decisions for you. Best
           of all, its free.
         </p>
-        <Feature img={mainbnf} feature="BNF Indicator." copy="Never be late again!"/>
-        <Feature img={watchlist} />
-        <Feature img={breakout} />
-        <Feature img={newnews} />
+        <div className="relative flex flex-row flex-wrap  md:gap-12 gap-6 justify-around">
+          <div className=" ">
+            <Feature
+              img={mainbnf}
+              feature="BNF Indicator"
+              copy="Never be late again!"
+            />
+          </div>
+          <div className="">
+            <Feature
+              img={watchlist}
+              feature="Watchlist"
+              copy="Track big players easily."
+            />
+          </div>
+
+          <div className="">
+            <Feature
+              img={breakout}
+              feature="Market moving"
+              copy="Take overview at ease."
+            />
+          </div>
+          <div className="">
+            <Feature
+              img={newnews}
+              feature="API News"
+              copy="Latest news fast."
+            />
+          </div>
+        </div>
+        <p className="mt-10 text-center">
+          Let&apos;s the computer do hard work! So you can enjoy{" "}
+          <span className="font-staa text-green-700">profit</span>.
+        </p>
       </div>
       {/* ---------------------function 3-------------------------------------------- */}
 
@@ -177,8 +213,14 @@ const projects = () => {
           <p className="text-center font-bold text-[2rem] ">
             Multiple timeframes
           </p>
+          <p className="text-center font-robo p-2 my-auto text-sm">
+            See all your setup, charts, and indicators together in one place.
+            With everything connected, you will get timely nerdy insights so you
+            can be sure you are making the right financial decisions for you.
+            Best of all, its free.
+          </p>
           <br />
-          <div className="flex justify-end w-full">
+          <div className="flex justify-end w-full drop-shadow-lg ">
             <div id="split-board" className="">
               <Image
                 src={multichart}
@@ -189,16 +231,34 @@ const projects = () => {
             </div>
           </div>
           <br />
-
-          <p className="text-center font-robo p-2 my-auto text-sm">
-            See all your savings, credit cards, and investments together in one
-            place. With everything connected, you will get timely nerdy insights
-            so you can be sure you are making the right financial decisions for
-            you. Best of all, its free.
-          </p>
         </div>
       </div>
       {/* ---------------------function 5-------------------------------------------- */}
+      <div className="relative flex flex-row min-h-[100vh] bg-gray-900 text-white ">
+        <div
+          id="text-overlay"
+          className="absolute z-20 bg-stone-900/70 p-12 min-h-[100vh]"
+        >
+          <p className="font-robo text-[3rem] font-bold">
+            What are you waiting for?
+          </p>
+          <br />
+          <p>
+            The best tool to get is generally the one with the lowest rates and
+            most ideal profit. But other factors — like time to fund, the
+            trading purpose and your trading game — play a role in determining
+            the right type of financing and lender for your business.
+          </p>
+          <br />
+
+          <BtnSquareTrans text="Hire Tung" />
+        </div>
+        <div id="video-bg" className="absolute z-60">
+          <video autoPlay loop muted className="">
+            <source src="/demo2.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
       {/* ---------------------function 6-------------------------------------------- */}
       {/* ---------------------function 7-------------------------------------------- */}
       {/* ---------------------function 8-------------------------------------------- */}

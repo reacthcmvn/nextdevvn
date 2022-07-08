@@ -2,18 +2,17 @@ import React from "react";
 import Image from "next/image";
 
 import tungboard from "../styles/src/img/tungnoisecover.jpg";
+import codeishard from "../styles/src/img/codeishardye.jpg";
 
 const aboutMe = () => {
   return (
     <div className="main-body p-6">
-      <div className="absolute max-w-[30vw] right-0">
-        <Image src={tungboard} alt="tung works hard" layout="intrinsic" />
-      </div>
       <div className="max-w-[60vw] first-letter:text-7xl">
         Finding myself in middle of nowhere at the age 32, I decide to become a
         web developer.
       </div>
       <br />
+
       <Image src={tungboard} alt="tung works hard" layout="intrinsic" />
 
       <h1 className="h1">Why?</h1>
@@ -26,6 +25,7 @@ const aboutMe = () => {
         I should try learning web development.
       </div>
       <br />
+
       <h1 className="">Today, I am so happy that I took that advice.</h1>
       <div className="">
         As I find out more about the job and the things that developers do
