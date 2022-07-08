@@ -234,26 +234,28 @@ const projects = () => {
         </div>
       </div>
       {/* ---------------------function 5-------------------------------------------- */}
-      <div className="relative flex flex-row min-h-[100vh] bg-gray-900 text-white ">
+      <div className="relative overflow-hidden flex flex-row min-h-[80vh] bg-gray-900 text-white  ">
         <div
           id="text-overlay"
-          className="absolute z-20 bg-stone-900/70 p-12 min-h-[100vh]"
+          className="absolute z-20 bg-stone-900/70 p-12 min-h-[100vh] md:w-full "
         >
-          <p className="font-robo text-[3rem] font-bold">
-            What are you waiting for?
-          </p>
-          <br />
-          <p>
-            The best tool to get is generally the one with the lowest rates and
-            most ideal profit. But other factors — like time to fund, the
-            trading purpose and your trading game — play a role in determining
-            the right type of financing and lender for your business.
-          </p>
-          <br />
+          <div id="all-text" className="md:max-w-[20vw]">
+            <p className="font-robo text-[3rem] font-bold">
+              What are you waiting for?
+            </p>
+            <br />
+            <p>
+              The best tool to get is generally the one with the lowest rates
+              and most ideal profit. But other factors — like time to fund, the
+              trading purpose and your trading game — play a role in determining
+              the right type of financing and lender for your business.
+            </p>
+            <br />
 
-          <BtnSquareTrans text="Hire Tung" />
+            <BtnSquareTrans text="Hire Tung" />
+          </div>
         </div>
-        <div id="video-bg" className="absolute z-60">
+        <div id="video-bg" className="absolute z-60 ">
           <video autoPlay loop muted className="">
             <source src="/demo2.mp4" type="video/mp4" />
           </video>
