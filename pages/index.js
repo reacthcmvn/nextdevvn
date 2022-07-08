@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import getme from "../styles/src/img/tungnoise.jpg";
-import avatar from "../styles/src/img/tungnoise.jpg";
+import tungclean from "../styles/src/img/tungclean.jpg";
 
 import { GoHeart } from "react-icons/go";
 
@@ -18,7 +18,7 @@ export default function Home() {
             {/* <div className=" bg-pink-500  min-h-[60vh] mt-4 ml-2 max-w-[30vh] rounded-l-[100vh] z-[99] bg-cover bg-[url('https://nextdevvn2.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftungnoise.8c3624ea.jpg&w=3840&q=75')] "></div> */}
             <div className="relative overflow-hidden bg-orange-500/30  min-h-[60vh] mt-4 ml-2 max-w-[30vh] rounded-l-[100vh] z-[99]  ">
               <Image
-                src={getme}
+                src={tungclean}
                 alt="get this url"
                 layout="fill"
                 objectFit="cover"

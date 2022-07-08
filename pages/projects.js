@@ -75,7 +75,7 @@ const projects = () => {
         <br />
       </div>
       {/* ---------------------overview-------------------------------------------- */}
-      <div className=" h-[100vh] bg-red-500/0 py-10 px-6">
+      <div className=" h-[100vh] bg-red-500/0  py-10 px-6 ">
         <div id="headline" className="font-robo  text-center">
           <div className="text-[3rem] font-bold ">
             <p>Built by Trader,</p>
@@ -87,7 +87,7 @@ const projects = () => {
           </p>
         </div>
         <Link href="https://funtradinglab2.vercel.app/">
-          <div className="rounded-lg bg-gray-100 h-20 mx-0 my-6 font-robo font-semibold text-lg flex justify-start pl-6">
+          <div className="cursor-pointer rounded-lg bg-gray-100 h-20 mx-0 my-6 font-robo font-semibold text-lg flex justify-start pl-6">
             <HiCursorClick className="my-auto m-2 " />
             <p className="my-auto">Watch Live Demo Now!</p>
           </div>
@@ -106,7 +106,7 @@ const projects = () => {
           <p className="text-center font-bold text-[2rem] ">
             Fully customizable dashboard
           </p>
-          <p className="text-center font-robo p-2 my-auto text-sm">
+          <p className="text-center font-robo p-2 mb-[40px] text-sm">
             More than 12 indicators are included. Aimed to assist traders making
             meaningful decisions.
           </p>
@@ -116,7 +116,7 @@ const projects = () => {
 
       <div
         id="demo-part-1"
-        className="min-h-[40vh] max-w-[400px] rounded-xl bg-yellow-400 mx-6 my-40 drop-shadow-lg"
+        className="relative min-h-[40vh] max-w-[400px] rounded-xl bg-yellow-400 mx-6 my-80 drop-shadow-lg"
       >
         <div className="flex justify-end w-full">
           <div
@@ -131,8 +131,11 @@ const projects = () => {
             />
           </div>
         </div>
-        <div id="quote" className="font-corm text-[2rem] p-6 min-h-[60vh]">
-          <div className="mt-40">
+        <div
+          id="quote"
+          className="font-corm text-[2rem] p-6 min-h-[40vh] mt-40"
+        >
+          <div className="">
             <p>&ldquo;You cannot lose </p>
             <p> by taking profit.&ldquo;</p>
             <br />
