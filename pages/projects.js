@@ -165,7 +165,7 @@ const projects = () => {
           can be sure you are making the right financial decisions for you. Best
           of all, its free.
         </p>
-        <Feature img={mainbnf} />
+        <Feature img={mainbnf} feature="BNF Indicator." copy="Never be late again!"/>
         <Feature img={watchlist} />
         <Feature img={breakout} />
         <Feature img={newnews} />
