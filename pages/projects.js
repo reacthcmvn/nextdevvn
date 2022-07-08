@@ -6,7 +6,7 @@ import BtnPill from "../components/ui/BtnPill";
 import { HiCursorClick } from "react-icons/hi";
 import { BsFillCheckSquareFill } from "react-icons/bs";
 
-import mockup from "../styles/src/img/project1/port1-01.jpg";
+import mockup from "../styles/src/img/project1/port1-03.jpg";
 import fullboard from "../styles/src/img/project1/port1-01.png";
 import mainbnf from "../styles/src/img/project1/port101.png";
 import watchlist from "../styles/src/img/project1/port102.png";

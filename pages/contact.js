@@ -9,6 +9,9 @@ const contact = () => {
         <div id="contact">
           <span>My E-mail: </span>
           <a href="mailto:react.hcmvn@gmail.com">react.hcmvn@gmail.com</a>
+          <br />
+          <span>My Phone: </span>
+          <a href="tel:+84932704612">093-270-4612</a>
         </div>
       </div>
     </div>
