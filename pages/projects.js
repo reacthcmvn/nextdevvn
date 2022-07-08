@@ -96,7 +96,7 @@ const projects = () => {
         </div>
         <div className="text-center">
           <p className="mt-10">
-            Let's the computer do hard work! So you can enjoy{" "}
+            Let&apos;s the computer do hard work! So you can enjoy{" "}
             <span className="font-staa text-green-700">profit</span>.
           </p>
         </div>
@@ -122,8 +122,8 @@ const projects = () => {
         </div>
         <div id="quote" className="font-corm text-[2rem] p-6">
           <div className="mt-20">
-            <p>"You cannot lose </p>
-            <p> by taking profit."</p>
+            <p>&ldquoYou cannot lose </p>
+            <p> by taking profit.&ldquo</p>
           </div>
         </div>
 
