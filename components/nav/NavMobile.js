@@ -60,7 +60,7 @@ const NavMobile = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="absolute w-full min-h-screen top-0 flex flex-col md:flex-row bg-white border-2 border-red-500 z-100 text-[50px] font-robo font-bold"
+              className="absolute w-full min-h-screen top-0 flex flex-col md:flex-row bg-white p-2  z-100 text-[50px] font-robo font-bold"
             >
               <motion.li variants={item} onClick={toggleNavHandler}>
                 <div className="flex justify-between">
